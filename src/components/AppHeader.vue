@@ -3,14 +3,17 @@
     <div class="ui inverted secondary pointing menu">
       <a class="active item">Vueimgur-Bucket</a>
       <div class="right menu">
-        <a class="item">Sign In</a>
+        <a href="#" class="item" @click="login">Sign In</a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 export default {
-  name: "AppHeader"
+  name: "AppHeader",
+  methods: mapActions(["login"])
 };
 </script>
