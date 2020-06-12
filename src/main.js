@@ -3,6 +3,6 @@ import App from './App'
 import store from './vuex/store'
 
 new Vue({
-    store,
+    store, // follow up the handshake
     render: h=> h(App)
 }).$mount('#app')
