@@ -12,7 +12,7 @@ Vue.use(VueRouter)
 // ─── ROUTE ──────────────────────────────────────────────────────────────────────
 //
 
-const router = new VueRouter({
+export const router = new VueRouter({
     mode: 'history',
     routes: [
         {path: '/oauth2/callback',component: AuthHandler}
