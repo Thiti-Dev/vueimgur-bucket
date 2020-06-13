@@ -1,6 +1,29 @@
 ## 🎓 vueimgur-bucket => using Vue
 
-Just4Fun^^ ( in -development )
+Just4Fun^^ ( DONE )
+
+## ✨ Features
+
+- [x] Authentication with OAuth2
+- [x] Upload single image by selecting/dragging
+- [x] Upload multiple images by selecting/dragging
+- [x] View the uploaded images
+
+
+## 🚀 Getting Started
+
+1. **Install the node modules.**
+
+Installing via yarn / npm , your preference
+
+```sh
+yarn install
+```
+
+2. **Running a server.**
+```sh
+yarn serve
+```
 
 <p align="center">
   <b>: Contact me By :</b><br>
