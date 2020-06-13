@@ -1,6 +1,7 @@
 import qs from 'qs'
 
 import api from '../../../api/imgur'
+import {router} from '../../../main'
 
 const state ={
     token: window.localStorage.getItem('imgur_token') || null // null for default => hasn't authenticated
@@ -19,6 +20,8 @@ const actions = {
         const query = qs.parse(hash.replace('#', ''));
         commit('setToken',query.access_token)
         window.localStorage.setItem('imgur_token',query.access_token )
+        // Redirection
+        router.push('/') // root route
 
     },
     logout: ({commit}) => {
